@@ -2,201 +2,85 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Tren Saatleri mobil uygulaması gizlilik politikası"
-    >
-
-    <meta name="theme-color" content="#1565C0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tren Saatleri - Gizlilik Politikası</title>
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="favicon.png"
-    >
-
-    <link
-        rel="apple-touch-icon"
-        href="favicon.png"
-    >
-
     <style>
-        :root {
-            --primary: #1565c0;
-            --primary-dark: #0d2a43;
-            --primary-light: #eaf3ff;
-            --background: #f5f7fa;
-            --card: #ffffff;
-            --text: #18212f;
-            --secondary: #667085;
-            --border: #e5eaf0;
-            --warning: #fff8e1;
-            --warning-border: #ffc107;
-        }
-
         * {
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             margin: 0;
-            background: var(--background);
-            color: var(--text);
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Arial,
-                sans-serif;
+            padding: 24px;
+            background: #f4f7fb;
+            color: #263238;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
         }
 
-        .header {
-            padding: 52px 20px 58px;
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--primary-dark),
-                    var(--primary)
-                );
-            color: white;
-            text-align: center;
-        }
-
-        .logo {
-            width: 86px;
-            height: 86px;
-            margin-bottom: 14px;
-            border: 4px solid rgba(255, 255, 255, 0.35);
-            border-radius: 50%;
-            background: white;
-            object-fit: cover;
-            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 34px;
-            line-height: 1.25;
-        }
-
-        .header p {
-            margin: 10px 0 0;
-            font-size: 17px;
-            opacity: 0.92;
-        }
-
         .container {
-            width: min(900px, calc(100% - 32px));
-            margin: -30px auto 42px;
-        }
-
-        .card {
-            margin-bottom: 16px;
-            padding: 24px;
-            background: var(--card);
-            border: 1px solid var(--border);
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 32px;
+            background: #ffffff;
             border-radius: 18px;
-            box-shadow: 0 5px 18px rgba(13, 42, 67, 0.07);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
         }
 
-        .important {
-            border-left: 5px solid var(--primary);
-        }
-
-        .warning {
-            background: var(--warning);
-            border-left: 5px solid var(--warning-border);
+        h1 {
+            margin-top: 0;
+            color: #0d47a1;
+            font-size: 32px;
         }
 
         h2 {
-            margin: 0 0 12px;
-            color: var(--primary-dark);
+            margin-top: 32px;
+            color: #1565c0;
             font-size: 21px;
-            line-height: 1.35;
         }
 
         p {
-            margin: 10px 0;
-            color: var(--secondary);
-        }
-
-        ul {
             margin: 12px 0;
-            padding-left: 22px;
         }
 
-        li {
-            margin-bottom: 8px;
-            color: var(--secondary);
-        }
-
-        strong {
-            color: var(--text);
-        }
-
-        .badge {
-            display: inline-block;
-            margin-top: 12px;
-            padding: 7px 12px;
-            background: var(--primary-light);
-            color: var(--primary);
-            border-radius: 999px;
+        .update-date {
+            margin-bottom: 28px;
+            color: #607d8b;
             font-size: 14px;
-            font-weight: 700;
         }
 
-        .data-box {
-            margin-top: 14px;
-            padding: 16px;
-            background: #f8fafc;
-            border: 1px solid var(--border);
-            border-radius: 13px;
-        }
-
-        a {
-            color: var(--primary);
-            font-weight: 600;
-            text-decoration: none;
-            word-break: break-word;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        .info-box {
+            margin: 20px 0;
+            padding: 18px;
+            background: #eaf3ff;
+            border-left: 5px solid #1976d2;
+            border-radius: 10px;
         }
 
         footer {
-            padding: 0 20px 34px;
-            color: var(--secondary);
-            text-align: center;
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid #dfe6ee;
+            color: #607d8b;
             font-size: 14px;
+            text-align: center;
         }
 
         @media (max-width: 600px) {
-            .header {
-                padding-top: 40px;
+            body {
+                padding: 12px;
             }
 
-            .header h1 {
-                font-size: 29px;
+            .container {
+                padding: 22px;
+                border-radius: 12px;
             }
 
-            .card {
-                padding: 20px;
-                border-radius: 15px;
+            h1 {
+                font-size: 27px;
             }
         }
     </style>
@@ -204,379 +88,108 @@
 
 <body>
 
-<header class="header">
-
-    <img
-        class="logo"
-        src="favicon.png"
-        alt="Tren Saatleri uygulama logosu"
-    >
-
-    <h1>Tren Saatleri</h1>
-    <p>Gizlilik Politikası</p>
-
-</header>
-
-<main class="container">
-
-    <section class="card important">
-
-        <h2>Genel bilgi</h2>
-
-        <p>
-            Bu gizlilik politikası, paket adı
-            <strong>com.DTdesign.trensaatleri</strong>
-            olan Tren Saatleri Android uygulaması için hazırlanmıştır.
-        </p>
-
-        <p>
-            Bu sayfa, uygulamada kullanılan veri işleme yöntemlerini,
-            yerel kayıtları, reklam hizmetlerini ve kullanıcıların
-            gizlilik tercihlerini açıklamaktadır.
-        </p>
-
-        <span class="badge">
-            Son güncelleme: 5 Ağustos 2026
-        </span>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Uygulamanın doğrudan toplamadığı bilgiler</h2>
-
-        <p>
-            Tren Saatleri uygulaması kullanıcıdan aşağıdaki bilgileri
-            doğrudan istemez:
-        </p>
-
-        <ul>
-            <li>Ad ve soyad</li>
-            <li>E-posta adresi veya telefon numarası</li>
-            <li>Ev veya iş adresi</li>
-            <li>Kişi listesi</li>
-            <li>Fotoğraf, video veya ses kayıtları</li>
-            <li>Kesin konum bilgisi</li>
-            <li>Kimlik veya ödeme bilgileri</li>
-        </ul>
-
-        <p>
-            Uygulamada kullanıcı hesabı oluşturma veya oturum açma
-            sistemi bulunmamaktadır.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Favoriler ve yerel depolama</h2>
-
-        <p>
-            Kullanıcının favoriye eklediği trenlerin kimlikleri,
-            favoriler özelliğinin çalışabilmesi amacıyla yalnızca
-            kullanıcının cihazında yerel olarak saklanır.
-        </p>
-
-        <p>
-            Bu favori kayıtları geliştiriciye ait bir sunucuya
-            gönderilmez ve geliştirici tarafından uzaktan
-            görüntülenemez.
-        </p>
-
-        <p>
-            Kullanıcı uygulama verilerini temizlediğinde veya
-            uygulamayı cihazından kaldırdığında favori kayıtları
-            silinebilir.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Google AdMob reklamları</h2>
-
-        <p>
-            Tren Saatleri uygulaması, uygulama içinde reklam göstermek
-            amacıyla Google tarafından sağlanan
-            <strong>Google AdMob</strong> ve
-            <strong>Google Mobile Ads SDK</strong> hizmetlerini
-            kullanmaktadır.
-        </p>
-
-        <p>
-            Google Mobile Ads SDK, reklamların sunulması, reklam
-            performansının ölçülmesi, analiz yapılması ve geçersiz
-            trafik ya da sahtekârlığın önlenmesi amacıyla belirli
-            bilgileri otomatik olarak işleyebilir ve Google ile
-            paylaşabilir.
-        </p>
-
-        <div class="data-box">
-
-            <strong>
-                Google Mobile Ads SDK tarafından işlenebilecek
-                bilgiler:
-            </strong>
-
-            <ul>
-                <li>
-                    Cihazın IP adresi ve bundan tahmin edilebilen
-                    yaklaşık genel konum
-                </li>
-
-                <li>
-                    Uygulamanın açılması, reklam görüntüleme,
-                    dokunma ve benzeri uygulama etkileşimleri
-                </li>
-
-                <li>
-                    Uygulamanın ve reklam SDK'sının performansına
-                    ilişkin tanılama bilgileri
-                </li>
-
-                <li>
-                    Android reklam kimliği, uygulama grubu kimliği
-                    ve diğer cihaz veya hesap tanımlayıcıları
-                </li>
-            </ul>
-
-        </div>
-
-        <p>
-            Bu bilgiler reklam gösterimi, reklam ölçümü, analiz,
-            güvenlik ve sahtekârlığın önlenmesi gibi amaçlarla
-            kullanılabilir.
-        </p>
-
-        <p>
-            Google'ın verileri nasıl işlediği hakkında daha fazla
-            bilgi için aşağıdaki sayfalar incelenebilir:
-        </p>
-
-        <p>
-            <a
-                href="https://policies.google.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google Gizlilik Politikası
-            </a>
-        </p>
-
-        <p>
-            <a
-                href="https://policies.google.com/technologies/partner-sites"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google'ın iş ortağı uygulamalarındaki verileri
-                kullanımı
-            </a>
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Reklam ve gizlilik tercihleri</h2>
-
-        <p>
-            Uygulama, gerekli bölgelerde kullanıcıların reklam ve
-            kişisel veri kullanım tercihlerini almak için Google
-            User Messaging Platform hizmetini kullanır.
-        </p>
-
-        <p>
-            Kullanıcıya bulunduğu bölgeye ve geçerli düzenlemelere
-            bağlı olarak şu seçenekler sunulabilir:
-        </p>
-
-        <ul>
-            <li>İzin verme</li>
-            <li>İzin vermeme</li>
-            <li>Tercihleri ayrıntılı şekilde yönetme</li>
-        </ul>
-
-        <p>
-            Gerekli olduğu durumlarda kullanıcı, uygulamadaki
-            <strong>Hakkında → Gizlilik seçenekleri</strong>
-            bölümünden reklam ve veri tercihlerini daha sonra
-            yeniden görüntüleyebilir veya değiştirebilir.
-        </p>
-
-        <p>
-            Kullanıcının seçimi, gösterilebilecek reklamların türünü
-            ve kişiselleştirme durumunu etkileyebilir.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Reklam kimliği</h2>
-
-        <p>
-            Android cihazlarda reklam hizmetleri, cihazın reklam
-            kimliğini kullanabilir. Kullanıcı reklam kimliğini Android
-            cihaz ayarlarından sıfırlayabilir veya silebilir.
-        </p>
-
-        <p>
-            Reklam kimliğinin kullanılabilir olmadığı ya da gerekli
-            iznin bulunmadığı durumlarda Google sınırlı veya
-            kişiselleştirilmemiş reklam yöntemleri kullanabilir.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Tren ve sefer bilgileri</h2>
-
-        <p>
-            Uygulamada gösterilen tren, güzergâh, kalkış saati,
-            varış saati ve çalışma günü bilgileri uygulamanın veri
-            dosyalarından okunur.
-        </p>
-
-        <p>
-            Tren saatleri ve çalışma günleri zamanla değişebilir.
-            Kullanıcıların yolculuk öncesinde güncel bilgileri resmî
-            ulaşım kanallarından kontrol etmesi önerilir.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Haricî bağlantılar</h2>
-
-        <p>
-            Uygulama, gizlilik politikası veya diğer bilgilendirme
-            sayfaları için haricî internet bağlantıları açabilir.
-        </p>
-
-        <p>
-            Haricî bir internet sitesine geçildiğinde ilgili sitenin
-            kendi gizlilik politikası, veri işleme uygulamaları ve
-            kullanım koşulları geçerli olur.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Veri güvenliği</h2>
-
-        <p>
-            Uygulamanın geliştirici tarafından yönetilen bir kullanıcı
-            hesabı veya kişisel kullanıcı veri tabanı bulunmamaktadır.
-        </p>
-
-        <p>
-            Google Mobile Ads SDK tarafından aktarılan verilerin
-            güvenliği ve işlenmesi Google'ın kendi teknik ve gizlilik
-            uygulamalarına tabidir.
-        </p>
-
-        <p>
-            İnternet üzerinden yapılan veri aktarımlarında mutlak
-            güvenlik garanti edilemez. Bununla birlikte uygulama,
-            şifrelenmemiş HTTP bağlantılarını engelleyecek şekilde
-            yapılandırılmıştır.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Verilerin silinmesi</h2>
-
-        <p>
-            Tren Saatleri uygulamasında kullanıcı hesabı
-            bulunmadığından geliştirici tarafında silinecek bir
-            kullanıcı hesabı veya kişisel profil kaydı tutulmaz.
-        </p>
-
-        <p>
-            Cihazda tutulan favori kayıtları aşağıdaki yöntemlerden
-            biriyle silinebilir:
-        </p>
-
-        <ul>
-            <li>Favorileri uygulama içinden kaldırmak</li>
-            <li>Android ayarlarından uygulama verilerini temizlemek</li>
-            <li>Uygulamayı cihazdan kaldırmak</li>
-        </ul>
-
-        <p>
-            Google tarafından reklam hizmetleri kapsamında işlenen
-            bilgiler için Google'ın gizlilik ve reklam ayarları
-            kullanılmalıdır.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Çocukların gizliliği</h2>
-
-        <p>
-            Uygulama kullanıcıdan doğrudan ad, iletişim bilgisi,
-            fotoğraf veya benzeri kişisel bilgiler istemez ve
-            kullanıcı hesabı oluşturmaz.
-        </p>
-
-        <p>
-            Ebeveynlerin ve yasal vasilerin, çocukların kullandığı
-            cihazlardaki reklam ve gizlilik ayarlarını kontrol etmesi
-            önerilir.
-        </p>
-
-    </section>
-
-    <section class="card warning">
-
-        <h2>Politikadaki değişiklikler</h2>
-
-        <p>
-            Uygulamaya yeni reklam türleri, analiz sistemleri,
-            çevrim içi veri kaynakları, hesap sistemi veya başka bir
-            üçüncü taraf hizmeti eklenmesi durumunda bu gizlilik
-            politikası güncellenebilir.
-        </p>
-
-        <p>
-            Güncel gizlilik politikası her zaman bu sayfada
-            yayımlanacaktır.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>İletişim</h2>
-
-        <p>
-            Gizlilik politikası veya uygulamanın veri işleme
-            uygulamalarıyla ilgili sorular için:
-        </p>
-
-        <p>
-            <strong>E-posta:</strong>
-
-            <a href="mailto:EPOSTA_ADRESINI_BURAYA_YAZ">
-                EPOSTA_ADRESINI_BURAYA_YAZ
-            </a>
-        </p>
-
-    </section>
-
-</main>
-
-<footer>
-    © 2026 Tren Saatleri
-</footer>
+<div class="container">
+
+    <h1>Tren Saatleri Gizlilik Politikası</h1>
+
+    <p class="update-date">
+        Son güncelleme: 5 Ağustos 2026
+    </p>
+
+    <div class="info-box">
+        Tren Saatleri uygulaması kullanıcıların kişisel verilerini
+        toplamaz, üçüncü taraflarla paylaşmaz ve reklam göstermez.
+    </div>
+
+    <h2>1. Toplanan veriler</h2>
+
+    <p>
+        Tren Saatleri uygulaması; ad, soyadı, e-posta adresi, telefon
+        numarası, konum, cihaz kimliği, fotoğraf, dosya veya benzeri
+        kişisel kullanıcı verilerini toplamaz ve geliştiriciye aktarmaz.
+    </p>
+
+    <p>
+        Uygulamada kullanıcı hesabı oluşturma veya kullanıcı girişi
+        özelliği bulunmamaktadır.
+    </p>
+
+    <h2>2. Favori trenler</h2>
+
+    <p>
+        Kullanıcının favori olarak işaretlediği trenler yalnızca
+        kullanıcının kendi cihazında yerel olarak saklanır.
+    </p>
+
+    <p>
+        Bu bilgiler geliştiriciye veya herhangi bir üçüncü tarafa
+        gönderilmez. Uygulama verileri temizlendiğinde ya da uygulama
+        kaldırıldığında cihazda tutulan favori bilgileri de silinebilir.
+    </p>
+
+    <h2>3. Reklamlar ve analiz hizmetleri</h2>
+
+    <p>
+        Tren Saatleri uygulamasında reklam gösterilmez.
+    </p>
+
+    <p>
+        Uygulama; reklam, kullanıcı takibi veya kullanım analizi amacıyla
+        AdMob, Google Analytics ya da benzeri üçüncü taraf hizmetlerini
+        kullanmaz.
+    </p>
+
+    <h2>4. İnternet ve haricî bağlantılar</h2>
+
+    <p>
+        Uygulama içerisinde yer alan Gizlilik Politikası bağlantısı,
+        kullanıcının cihazındaki internet tarayıcısında açılabilir.
+        Haricî internet sitelerinin veri uygulamaları kendi gizlilik
+        politikalarına tabidir.
+    </p>
+
+    <p>
+        Bu gizlilik politikası sayfası GitHub Pages üzerinde
+        yayımlanmaktadır. Sayfanın görüntülenmesi sırasında GitHub’ın
+        kendi gizlilik ve güvenlik uygulamaları geçerli olabilir.
+    </p>
+
+    <h2>5. Çocukların gizliliği</h2>
+
+    <p>
+        Uygulama hiçbir kullanıcıdan bilerek kişisel veri toplamaz.
+        Bu durum çocuk kullanıcılar için de geçerlidir.
+    </p>
+
+    <h2>6. Veri paylaşımı</h2>
+
+    <p>
+        Uygulama tarafından kişisel veri toplanmadığı için kullanıcı
+        verileri şirketler, kuruluşlar veya diğer üçüncü taraflarla
+        paylaşılmaz.
+    </p>
+
+    <h2>7. Gizlilik politikasındaki değişiklikler</h2>
+
+    <p>
+        Uygulamanın özelliklerinde veya veri uygulamalarında değişiklik
+        yapılması hâlinde bu gizlilik politikası güncellenebilir.
+        Güncel metin her zaman bu sayfada yayımlanır.
+    </p>
+
+    <h2>8. İletişim</h2>
+
+    <p>
+        Gizlilik politikasıyla ilgili sorular için Google Play’deki
+        Tren Saatleri mağaza sayfasında bulunan geliştirici iletişim
+        bilgileri kullanılabilir.
+    </p>
+
+    <footer>
+        © 2026 Tren Saatleri
+    </footer>
+
+</div>
 
 </body>
 </html>
